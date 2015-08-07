@@ -1,3 +1,7 @@
+
+This is a fork of the excellent install script&guide created by Peter Löfgren, Loftux AB
+
+
 Alfresco Ubuntu Install
 =======================
 
