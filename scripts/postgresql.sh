@@ -6,10 +6,8 @@
 # Distributed under the Creative Commons Attribution-ShareAlike 3.0 Unported License (CC BY-SA 3.0)
 # -------
 
-export ALFRESCODB=alfresco
-export ALFRESCOUSER=alfresco
-export EBYSDB=ebys
-export EBYSUSER=ebys
+export ALFRESCODB=alfrescodb
+export ALFRESCOUSER=alfrescouser
 
 echo
 echo "--------------------------------------------"
@@ -42,15 +40,6 @@ if [ "$createdb" = "y" ]; then
   sudo -u postgres createdb -O $ALFRESCOUSER $ALFRESCODB
   echo
   echo "Remember to update alfresco-global.properties with the alfresco database password"
-  echo
-fi
-
-read -e -p "Create Ebys Database and user? [y/n] " -i "n" createdb2
-if [ "$createdb2" = "y" ]; then
-  sudo -u postgres createuser -D -A -P $EBYSUSER
-  sudo -u postgres createdb -O $EBYSUSER $EBYSDB
-  echo
-  echo "Remember to update ebys-data.xml with the ebys database password"
   echo
 fi
 
