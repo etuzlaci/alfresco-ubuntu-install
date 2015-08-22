@@ -152,6 +152,7 @@ if [ "$addalfresco" = "y" ]; then
   echo "Adding locale support"
   #install locale to support that locale date formats in open office transformations
   sudo locale-gen $LOCALESUPPORT
+  sudo dpkg-reconfigure locales
   echo
   echogreen "Finished adding alfresco user"
   echo
