@@ -59,10 +59,13 @@ echo
 echo "You must update postgresql configuration to allow password based authentication"
 echo "(if you have not already done this)."
 echo
-echo "Add the following to pg_hba.conf or postgresql.conf (depending on version of postgresql installed)"
+echo "Add the following to pg_hba.conf"
 echo "located in folder /etc/postgresql/<version>/main/"
 echo
 echo "host all all 127.0.0.1/32 password"
+echo "host all all samenet 		password"
+echo
+echo "Change this line in postgresql.conf listen_addresses='localhost' to listen_addresses='*'
 echo
 echo "After you have updated, restart the postgres server /etc/init.d/postgresql restart"
 echo
