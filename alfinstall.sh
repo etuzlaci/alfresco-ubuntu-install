@@ -18,8 +18,8 @@ export BASE_DOWNLOAD=https://raw.githubusercontent.com/etuzlaci/alfresco-ubuntu-
 export KEYSTOREBASE=https://svn.alfresco.com/repos/alfresco-open-mirror/alfresco/HEAD/root/projects/repository/config/alfresco/keystore
 
 #Change this to prefered locale to make sure it exists. This has impact on LibreOffice transformations
-#export LOCALESUPPORT=sv_SE.utf8
-export LOCALESUPPORT=en_US.utf8
+export LOCALESUPPORT=tr_TR.utf8
+#export LOCALESUPPORT=en_US.utf8
 
 export TOMCAT_DOWNLOAD=http://apache.mirrors.spacedump.net/tomcat/tomcat-7/v7.0.63/bin/apache-tomcat-7.0.63.tar.gz
 export JDBCPOSTGRESURL=https://jdbc.postgresql.org/download
