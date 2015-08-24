@@ -22,7 +22,7 @@ echo
 
 read -e -p "Install PostgreSQL database? [y/n] " -i "n" installpg
 if [ "$installpg" = "y" ]; then
-  sudo apt-get install postgresql
+  sudo apt-get install postgresql postgresql-contrib
   echo
   echo "You will now set the default password for the postgres user."
   echo "This will open a psql terminal, enter:"
