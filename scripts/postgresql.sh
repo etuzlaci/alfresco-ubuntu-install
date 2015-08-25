@@ -65,7 +65,7 @@ echo
 echo "host all all 127.0.0.1/32 password"
 echo "host all all samenet 		password"
 echo
-echo "Change this line in postgresql.conf listen_addresses='localhost' to listen_addresses='*'
+echo "Change this line in postgresql.conf listen_addresses='localhost' to listen_addresses='*'"
 echo
 echo "After you have updated, restart the postgres server /etc/init.d/postgresql restart"
 echo
