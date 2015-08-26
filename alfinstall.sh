@@ -203,7 +203,8 @@ if [ "$installtomcat" = "y" ]; then
   tar xf "$(find . -type f -name "apache-tomcat*")"
   sudo mv "$(find . -type d -name "apache-tomcat*")" $CATALINA_HOME
   # Remove apps not needed
-  sudo rm -rf $CATALINA_HOME/webapps/*
+  sudo rm -rf $CATALINA_HOME/webapps/docs
+  sudo rm -rf $CATALINA_HOME/webapps/examples
   # Get Alfresco config
   echo "Downloading tomcat configuration files..."
   sudo curl -# -o $CATALINA_HOME/conf/server.xml $BASE_DOWNLOAD/tomcat/server.xml
