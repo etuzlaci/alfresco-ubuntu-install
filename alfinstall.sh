@@ -205,6 +205,8 @@ if [ "$installtomcat" = "y" ]; then
   # Remove apps not needed
   sudo rm -rf $CATALINA_HOME/webapps/docs
   sudo rm -rf $CATALINA_HOME/webapps/examples
+  #Add ebys logging directory
+  sudo mkdir -p $ALF_HOME/logs/ebys
   # Get Alfresco config
   echo "Downloading tomcat configuration files..."
   sudo curl -# -o $CATALINA_HOME/conf/server.xml $BASE_DOWNLOAD/tomcat/server.xml
